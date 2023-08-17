@@ -52,7 +52,7 @@ nav li{
     color: white;
     overflow: hidden;
     animation: cont 2s ease-in-out;  /*Animation*/
-
+ 
 }
 
 @keyframes cont{
