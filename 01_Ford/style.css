@@ -1,0 +1,185 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: sans-serif;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    background-color: black;
+    overflow: hidden;
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    padding: 15px 20px;
+    color: white;
+    animation: header 2s ease-in-out;   /*Set Animation */
+}
+
+
+@keyframes header{
+    0%{
+        transform: translateY(-100%);
+    }
+}
+
+
+
+
+
+nav li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-weight: 600;
+    
+}
+
+
+.main{
+    width: 100%;
+    display: flex;
+}
+
+.content{
+    width: 50%;
+    margin-top: 8%;
+    margin-left: 5%;
+    color: white;
+    overflow: hidden;
+    animation: cont 2s ease-in-out;  /*Animation*/
+
+}
+
+@keyframes cont{
+    0%{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+}
+
+.content h1{
+    font-size: 80px;
+    margin-bottom: 1%;
+    letter-spacing: 8px;
+}
+
+.content h3{
+    font-size: 25px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content span{
+    color: yellow;
+}
+
+.content P{
+    font-size: 20px;
+    margin-bottom: 3%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    padding: 15px 30px;
+    background: transparent;
+    color: white;
+    font-size: 17px;
+    border-radius: 10px;
+}
+
+button:hover{
+    background-color: red;
+}
+
+.image{
+    width: 50%;
+    margin-top: 8%;
+    z-index: -1;      //*Content behind Car Pogum */
+}
+
+img{
+    width: 40rem;
+    animation: mycar 5s ease-in-out;
+}
+
+@keyframes mycar{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(-220%);
+    }
+}
+
+
+/* Extra Large Device 1200px */
+@media screen and (max-width:1200px){
+    .content{
+        width: 100%;
+        text-align: center;
+    }
+    .image{
+        width: 100%;
+        position: absolute;
+        bottom: -5%;
+        
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        width: 30rem;
+    }
+    
+}
+
+
+/* Small Device 1200px */
+@media screen and (max-width:576px){
+    .content{
+        width: 100%;
+        text-align: center;
+    }
+    .content h1,.content h3, .content p{
+        margin-bottom: 5%;
+    }
+    .image{
+        width: 100%;
+        position: absolute;
+        bottom: -5%;
+        
+        display: flex;
+        justify-content: center;
+    }
+    img{
+        width: 25rem;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
