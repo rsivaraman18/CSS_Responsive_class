@@ -12,7 +12,7 @@ body{
     align-items: center; /*Vertically center Height kudukanaum*/
     height: 100vh;   /*  Display Full height*/
     font-family: sans-serif;  
-    margin: 0 auto;
+    margin: 0 auto; 
 }
 
 .container{
