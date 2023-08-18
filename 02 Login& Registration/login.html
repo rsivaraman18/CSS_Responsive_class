@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+
+    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container" id="container">
+
+        <!--Sign Up Container-->
+        <div class="form-container sign-up-container">
+            <form action="#">
+                <h1>Create Account</h1>
+                <div class="social-container">
+                    <a href="#" class="social"> <i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="#" class="social"> <i class="fa-brands fa-google"></i> </a>
+                    <a href="#" class="social"> <i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>Or Use Your Email For Registration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="Password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
+        </div>
+
+        <!--Sign In Container-->
+        <div class="form-container sign-in-container">
+            <form action="#">
+                <h1>Sign In</h1>
+                <div class="social-container">
+                    <a href="#" class="social"> <i class="fa-brands fa-facebook-f"></i> </a>
+                    <a href="#" class="social"> <i class="fa-brands fa-google"></i> </a>
+                    <a href="#" class="social"> <i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>Or Use Your Account</span>
+                <input type="email" placeholder="Email">
+                <input type="Password" placeholder="Password">
+                <button>Sign In</button>
+            </form>
+        </div>  <!--Sign In Ends Here-->
+
+        <div class="overlay-container">   <!--Overlay To slide Starts Here-->
+            <div class="overlay">
+                <div class="overlay-panel overlay-left">
+                    <h1>Welcome  Siva !!!</h1>
+                    <p>Ready to Explore New Knowledge </p>
+                    <button class="press" id="signIn">Sign In</button>
+                </div>
+                <div class="overlay-panel overlay-right">
+                    <h1>Good to meet You Siva</h1>
+                    <p>Hope You are Enjoying with Frontend </p>
+                    <button class="press" id="signUp">Sign Up</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div> <!--Main Div Conatiner Neds Here -->
+    
+
+    <script>
+        const SignUpButton = document.getElementById('signUp');
+        const SignInButton = document.getElementById('signIn');
+        const container    = document.getElementById('container');
+    
+    
+        SignUpButton.addEventListener('click',()=>{
+            container.classList.add('right-panel-active');
+        })
+    
+        SignInButton.addEventListener('click',()=>{
+            container.classList.remove('right-panel-active');
+        })
+    
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
