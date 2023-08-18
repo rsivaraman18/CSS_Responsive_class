@@ -105,7 +105,7 @@ button{
     text-transform: uppercase;
     transition: transform .8s ease-in;   /* already animation occured this line to slow the speed*/
 }
-
+ 
 /* ********* Sign In Styling Starts Here    ***********************/
 
 .sign-in-container{
