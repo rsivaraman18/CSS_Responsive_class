@@ -6,7 +6,7 @@
 
 body{
     background-color: pink;   
-    background-color: rgb(245, 243, 120);  /** Both color looks good*/
+    background-color: rgb(245, 243, 120);  /** Both color looks good*/ 
     display: flex;
     justify-content: center;  /*Horizontal Center*/
     align-items: center; /*Vertically center Height kudukanaum*/
