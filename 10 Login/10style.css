@@ -38,10 +38,6 @@ section .ImgBox::before{
     mix-blend-mode: screen;                                               
 }
 
-
-
-
-
 section .ImgBox img{
     position: absolute;
     top: 0;
@@ -50,9 +46,6 @@ section .ImgBox img{
     height: 100%;
     object-fit: cover;
 }
-
-
-
 
 
 /****** Content Box ***************/
